@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #1a1a2e;
+  color: #e0e1dd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar,
+.footer {
+  background-color: #16213e;
+  color: #ffffff;
+}
+
+.button {
+  background-color: #e94560;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #a83348;
+}
+
+.card {
+  background-color: #0f3460;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header,
+.card-body {
+  padding: 10px;
+}
+
+.card-header {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.transaction-details {
+  font-size: 0.9em;
+  color: #c8d6e5;
+}

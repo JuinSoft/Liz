@@ -1,0 +1,10 @@
+{
+    "chainId": 4202,
+    "chainName": "lisk-sepolia-testnet",
+    "contracts": {
+        "creditScore": "0xb096cb08a5edf0951b5274ec24e5c9489bda3bfe"
+    },
+    "api": {
+        "covalent": "cqt_rQKQ8Xf6JXMQX6YpwyqCWKxDJ6tq"
+    }
+}
