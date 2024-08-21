@@ -1,0 +1,10 @@
+{
+    "chainId": 4157,
+    "chainName": "crossfi-testnet",
+    "contracts": {
+        "creditScore": "0x35859450841848f9dd847036abB78Eb166Efd587"
+    },
+    "api": {
+        "covalent": "cqt_rQKQ8Xf6JXMQX6YpwyqCWKxDJ6tq"
+    }
+}
