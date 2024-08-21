@@ -77,7 +77,7 @@ export default function Lend({ walletAddress }) {
                     </table>
                 </div>
             ) : (
-                <p>No one is borrowing at this time! ^-^ </p>
+                <p>No one is borrowing at this time (Other than you)! ^-^ </p>
             )}
             <div className="mt-6 text-sm text-gray-400">
                 <p>Note 1: Interest rates are dynamic and based on credit score.</p>

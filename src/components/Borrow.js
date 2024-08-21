@@ -24,8 +24,8 @@ function Borrow({ walletConnected, walletAddress }) {
                 <div className="input-group" style={styles.inputGroup}>
                     <input
                         type="number"
-                        placeholder="0.0"
-                        min={0.0001}
+                        placeholder="1"
+                        min={1}
                         value={borrowAmount}
                         onChange={(e) => setBorrowAmount(e.target.value)}
                         style={styles.input}

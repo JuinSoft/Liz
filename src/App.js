@@ -8,7 +8,7 @@ import Borrow from './components/Borrow';
 import Lend from './components/Lend';
 import CreditScore from './components/CreditScore';
 import MyBorrows from './components/MyBorrows';
-import MyLends from './components/MyLends';
+import Home from './components/Home';
 import Error from './components/Error';
 import Navbar from './components/Navbar';
 import config from './config/Constants.json';
@@ -79,11 +79,11 @@ function App() {
           <Navbar walletConnected={walletConnected} handleWalletConnect={handleWalletConnect} handleWalletDisconnect={handleWalletDisconnect} walletAddress={walletAddress} />
           {walletConnected && chainID === connectChainId && (
             <Routes>
-              <Route path="/" element={<Borrow walletConnected={walletConnected} walletAddress={walletAddress} />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/borrow" element={<Borrow walletConnected={walletConnected} walletAddress={walletAddress} />} />
               <Route path="/lend" element={<Lend walletConnected={walletConnected} walletAddress={walletAddress} />} />
               <Route path="/credit-score" element={<CreditScore walletConnected={walletConnected} walletAddress={walletAddress} />} />
               <Route path='/my-borrows' element={<MyBorrows walletConnected={walletConnected} walletAddress={walletAddress} />} />
-              {/* <Route path='/my-lends' element={<MyLends walletConnected={walletConnected} walletAddress={walletAddress} />} /> */}
               <Route path="*" element={<Error />} />
             </Routes>
           )}
@@ -102,6 +102,11 @@ function App() {
             )
           }
           <ToastContainer />
+          <div className="absolute bottom-4 right-4 text-white">
+            <a href="https://test.xfiscan.com/address/0x35859450841848f9dd847036abb78eb166efd587" target="_blank" rel="noopener noreferrer">
+              <span style={{ color: 'green' }}>Contract Address: 0x35859450841848f9dd847036abb78eb166efd587</span>
+            </a>
+          </div>
         </div>
       </GoldRushProvider>
     </WalletContext.Provider>
